@@ -36,6 +36,7 @@ administrator_roles = [887130740150661173]
 No_Cooldown = 887130740133879810
 
 roles = {
+    '887130740133879810': '3000',
     '887130740133879809': '750',
     '884922124735746088': '250',
     '887130740133879808': '125',
@@ -291,8 +292,8 @@ async def tfollow(ctx, channel, amount: int=None):
                             max_amount += 0
                             break
                 admin_roles = [role for role in ctx.author.roles if role.id in administrator_roles]
-                Extra = [role for role in ctx.author.roles if role.id in No_Cooldown]
-                if admin_roles or Extra or ctx.author.id in administrator_ids:
+                extra_followers = [role for role in ctx.author.roles if role.id in No_Cooldown]
+                if admin_roles or extra_followers or ctx.author.id in administrator_ids:
                     tfollow.reset_cooldown(ctx)
                     max_amount = len(open('tokens.txt', 'r').read().splitlines())
                 if not amount:
@@ -345,7 +346,8 @@ async def tfriend(ctx, channel, amount: int=None):
                             max_amount += 0
                             break
                 admin_roles = [role for role in ctx.author.roles if role.id in administrator_roles]
-                if admin_roles or ctx.author.id in administrator_ids:
+                extra_followers = [role for role in ctx.author.roles if role.id in No_Cooldown]
+                if admin_roles or extra_followers or ctx.author.id in administrator_ids:
                     tfriend.reset_cooldown(ctx)
                     max_amount = len(open('tokens.txt', 'r').read().splitlines())
                 if not amount:
