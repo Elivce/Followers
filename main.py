@@ -290,7 +290,7 @@ async def tfollow(ctx, channel, amount: int=None):
                             max_amount += 0
                             break
                 admin_roles = [role for role in ctx.author.roles if role.id in administrator_roles]
-                if admin_roles or extra_followers or ctx.author.id in administrator_ids:
+                if admin_roles or ctx.author.id in administrator_ids:
                     tfollow.reset_cooldown(ctx)
                     max_amount = len(open('tokens.txt', 'r').read().splitlines())
                 if not amount:
@@ -343,7 +343,7 @@ async def tfriend(ctx, channel, amount: int=None):
                             max_amount += 0
                             break
                 admin_roles = [role for role in ctx.author.roles if role.id in administrator_roles]
-                if admin_roles or extra_followers or ctx.author.id in administrator_ids:
+                if admin_roles or ctx.author.id in administrator_ids:
                     tfriend.reset_cooldown(ctx)
                     max_amount = len(open('tokens.txt', 'r').read().splitlines())
                 if not amount:
