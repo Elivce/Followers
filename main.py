@@ -73,7 +73,7 @@ class tfollow_bot:
     def bot(self, i):
         try:
             _, _, token = self.tokens[i].split(':')
-            user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+            user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36/zEQnQ9g8-55'
             origin = 'https://www.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
             client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
@@ -115,7 +115,7 @@ class tfriend_bot:
     def bot(self, i):
         try:
             _, _, token = self.tokens[i].split(':')
-            user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+            user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36/zEQnQ9g8-55'
             origin = 'https://www.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
             client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
