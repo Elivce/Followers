@@ -118,7 +118,7 @@ class tfriend_bot:
             user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36/zEQnQ9g8-55'
             origin = 'https://www.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
-            client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
+            client_id = 'ymd9sjdyrpi8kz8zfxkdf5du04m649'
             authorization = f'OAuth {token}'
             accept_language = 'en-US'
             data = '[{"operationName":"FriendButton_CreateFriendRequest","variables":{"input":{"targetID":"%s"}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"380d8b19fcffef2fd8654e524444055dbca557d71968044115849d569d24129a"}}}]' % self.channel_id
