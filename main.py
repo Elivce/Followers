@@ -272,7 +272,7 @@ async def tinfo(ctx, channel):
             await ctx.message.delete()
 
 @bot.command()
-@commands.cooldown(1, 180, type=commands.BucketType.user)
+@commands.cooldown(1, 30, type=commands.BucketType.user)
 async def tfollow(ctx, channel, amount: int=None):
     print(f'{ctx.author} | {ctx.author.id} -> {bot.command_prefix}tfollow {channel}' + (f' {amount}' if amount else ''))
     if ctx.channel.type != discord.ChannelType.private:
