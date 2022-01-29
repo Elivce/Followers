@@ -316,6 +316,8 @@ async def tfollow(ctx, channel, amount: int=None):
                 embed = discord.Embed(color=16776960, description=f'Sending `{amount}` twitch followers to `{channel}`! (`{position}/{position}`)')
                 await ctx.send(embed=embed)
                 queue.append(f'tfollow|{channel_id}|{amount}')
+                queue.append(f'tfollow|{channel_id}|{amount}')
+                queue.append(f'tfollow|{channel_id}|{amount}')
             except:
                 tfollow.reset_cooldown(ctx)
                 embed = discord.Embed(color=16776960, description='An error has occured while attempting to run this command!')
