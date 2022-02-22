@@ -205,8 +205,6 @@ async def help(ctx):
             embed.add_field(name='Twitch Followers', value=f'`{bot.command_prefix}tfollow (channel)`', inline=True)
             embed.add_field(name='Twitch Friend Req', value=f'`{bot.command_prefix}tfriend (channel)`', inline=True)
             embed.add_field(name='Follow Tasks', value=f'`{bot.command_prefix}tasks`', inline=True)
-            embed.add_field(name='Owners & Server', value=f'`{bot.command_prefix}credits`', inline=True)
-            embed.add_field(name='Free Bronze', value=f'`{bot.command_prefix}bronze`', inline=True)
             embed.set_thumbnail(url='https://cdn.vox-cdn.com/uploads/chorus_asset/file/19234624/03c_Glitch.gif')
             await ctx.send(embed=embed)
       else:
