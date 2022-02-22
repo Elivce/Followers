@@ -77,7 +77,7 @@ class tfollow_bot:
         try:
             _, _, token = self.tokens[i].split(':')
             user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36/zEQnQ9g8-55'
-            origin = 'https://www.twitch.tv'
+            origin = 'https://m.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
             client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
             authorization = f'OAuth {token}'
