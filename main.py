@@ -23,7 +23,7 @@ bot = commands.Bot(command_prefix=prefix, case_insensitive=True, intents=intents
 bot.remove_command('help')
 
 Bacon = 887130741056610326
-Premium = 945819470507704402
+Premium = 927768111145426975 #rmg#0699 2/3/21
 Premium_2 = [] #Brycee 12/11/21 908504740118265867
 Classic =  937839682476183562
 Classic_2 = []
@@ -35,10 +35,6 @@ administrator_ids = [824759664810000424,770020312535924796, 931441549160628245]
 administrator_roles = [887130740150661173,887130740133879810]
 
 roles = {
-    '945816804750663681': '500',
-    '945816805023318048': '250',
-    '945816805975392296': '100',
-    '945816806579388427': '50', #2
     '887130740133879809': '750',
     '932233622566633473': '250',
     '887130740133879808': '125',
@@ -77,7 +73,7 @@ class tfollow_bot:
         try:
             _, _, token = self.tokens[i].split(':')
             user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36/zEQnQ9g8-55'
-            origin = 'https://m.twitch.tv'
+            origin = 'https://www.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
             client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
             authorization = f'OAuth {token}'
@@ -205,6 +201,8 @@ async def help(ctx):
             embed.add_field(name='Twitch Followers', value=f'`{bot.command_prefix}tfollow (channel)`', inline=True)
             embed.add_field(name='Twitch Friend Req', value=f'`{bot.command_prefix}tfriend (channel)`', inline=True)
             embed.add_field(name='Follow Tasks', value=f'`{bot.command_prefix}tasks`', inline=True)
+            embed.add_field(name='Owners & Server', value=f'`{bot.command_prefix}credits`', inline=True)
+            embed.add_field(name='Free Bronze', value=f'`{bot.command_prefix}bronze`', inline=True)
             embed.set_thumbnail(url='https://cdn.vox-cdn.com/uploads/chorus_asset/file/19234624/03c_Glitch.gif')
             await ctx.send(embed=embed)
       else:
