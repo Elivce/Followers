@@ -24,8 +24,8 @@ bot.remove_command('help')
 
 Bacon = 887130741056610326
 Premium = 927768111145426975 #rmg#0699 2/3/21
-Premium_2 = [] #Brycee 12/11/21 908504740118265867
-Classic =  937839682476183562
+Premium_2 = 945819470507704402
+Classic = 937839682476183562
 Classic_2 = []
 
 threads = 500 + 4
