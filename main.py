@@ -81,9 +81,9 @@ class tfollow_bot:
             origin = 'https://www.twitch.tv'
             content_type = 'text/plain;charset=UTF-8'
             client_id = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
-            authorization = f'OAuth {token}'
+            authorization = f'OAuth wukbrnwp5f6uo4barxkzfpkacyugob'
             accept_language = 'en-US'
-            data = '[{"operationName":"FollowButton_FollowUser","variables":{"input":{"disableNotifications":false,"targetID":"%s"}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"3efee1acda90efdff9fef6e6b4a29213be3ee490781c5b54469717b6131ffdfe"}}}]' % self.channel_id
+            data = '[{"operationName":"FollowButton_FollowUser","variables":{"input":{"disableNotifications":false,"targetID":"%s"}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"51956f0c469f54e60211ea4e6a34b597d45c1c37b9664d4b62096a1ac03be9e6"}}}]' % self.channel_id
             content_length = len(data)
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.connect(('gql.twitch.tv', 443))
